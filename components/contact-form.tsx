@@ -101,9 +101,27 @@ export function ContactForm() {
             />
           </div>
 
-          <Button type="submit" className="w-full bg-[#80B6C1] hover:bg-[#458496] text-white">
-            Send Message <Send className="ml-2 h-4 w-4" />
-          </Button>
+         <Button
+  type="submit"
+  className="w-full bg-[#80B6C1] hover:bg-[#458496] text-white"
+  onClick={(e) => {
+    e.preventDefault();
+    const subject = encodeURIComponent("Business Inquiry");
+    const body = encodeURIComponent(
+      `Hello Pro-ICE Team,
+
+${formData.message}
+
+Name: ${formData.name}
+Email: ${formData.email}
+Company: ${formData.company}`
+    );
+
+    window.location.href = `mailto:info@pro-ice.com.ng?subject=${subject}&body=${body}`;
+  }}
+>
+  Send Message <Send className="ml-2 h-4 w-4" />
+</Button>
         </form>
       </CardContent>
     </Card>
