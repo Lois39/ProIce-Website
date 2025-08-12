@@ -15,6 +15,7 @@ const services = [
       "Workflows & EDMS",
     ],
     useCases: "Document management, team collaboration, workflow automation",
+    link: "/services/sharepoint-edms",
   },
   {
     title: "Web & Mobile App Development",
@@ -29,6 +30,7 @@ const services = [
       "Source Code Optimization",
     ],
     useCases: "E-commerce platforms, business applications, customer portals",
+    link: "/services/web-mobile-development",
   },
   {
     title: "Robotic Process Automation & AI Chatbot",
@@ -43,6 +45,7 @@ const services = [
       "Multi-language Support",
     ],
     useCases: "Customer service, data processing, workflow automation",
+    link: "/services/rpa-ai-chatbot",
   },
   {
     title: "Cybersecurity Solutions",
@@ -57,6 +60,7 @@ const services = [
       "Digital Forensics",
     ],
     useCases: "Data protection, compliance, threat detection and response",
+    link: "/services/cybersecurity",
   },
   {
     title: "Cloud Services",
@@ -71,6 +75,7 @@ const services = [
       "Cloud Security",
     ],
     useCases: "Business continuity, scalability, cost optimization",
+    link: "/services/cloud-services",
   },
   {
     title: "Internet of Things",
@@ -85,6 +90,7 @@ const services = [
       "Data Visualization",
     ],
     useCases: "Smart buildings, industrial monitoring, asset tracking",
+    link: "/services/internet-of-things",
   },
   {
     title: "Telecom Consulting",
@@ -99,6 +105,7 @@ const services = [
       "CAPEX/OPEX Optimization",
     ],
     useCases: "Network optimization, regulatory compliance, service quality",
+    link: "/services/telecom-consulting",
   },
 ]
 
