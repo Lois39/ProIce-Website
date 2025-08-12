@@ -1,77 +1,68 @@
-"use client"
-
-import { motion } from "framer-motion"
-import { Building2, Users, Award, MapPin } from "lucide-react"
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { AnimatedCounter } from "react-animated-counter"; // ensure this package is installed via pnpm
+import Card from "./Cards";
 
 const stats = [
-  {
-    icon: Users,
-    number: "20+",
-    label: "Local Resources as Pro-ICE Employees",
-    color: "#80B6C1",
-  },
-  {
-    icon: Building2,
-    number: "27+",
-    label: "Enterprise Customers",
-    color: "#458496",
-  },
-  {
-    icon: Award,
-    number: "10+",
-    label: "Universities UiPath Alliance Partners",
-    color: "#569AA7",
-  },
-  {
-    icon: MapPin,
-    number: "2",
-    label: "Offices in Nigeria (Lagos and Abuja)",
-    color: "#034F66",
-  },
-]
+  { value: 7, label: "Happy Clients", suffix: "" },
+  { value: 7, label: "Years Active", suffix: "" },
+  { value: 50, label: "Projects Completed", suffix: "+" },
+  { value: 17, label: "Partners", suffix: "+" },
+];
 
 export function StatsSection() {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl font-bold text-[#034F66] mb-4">Pro-ICE Ltd @ a Glance</h2>
-          <p className="text-xl text-[#569AA7] max-w-3xl mx-auto">
-            Established in 2018, we've grown to become a trusted technology partner for businesses across Nigeria and
-            beyond.
-          </p>
-        </motion.div>
+    <section id="about" className="w-full py-12 md:py-24 lg:py-32">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
+          {/* Left Side - Intro + Stats */}
+          <div className="space-y-4">
+            <h2 className="text-4xl font-bold text-[#034F66] tracking-tighter sm:text-4xl md:text-5xl">
+              Welcome to Pro-ICE Limited
+            </h2>
+            <p className="text-xl text-[#569AA7] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              At Pro-ICE, we help you bring your ideas to life—whether it’s a loan app,
+              an insurance website, or a custom business platform. From secure Web & Mobile
+              Development to cybersecurity, business operations support, and team training,
+              we offer the right tools to meet your goals.
+            </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {stats.map((stat, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="text-center p-6 rounded-lg bg-gradient-to-br from-white to-gray-50 border border-gray-100 hover:shadow-lg transition-shadow"
-            >
-              <div
-                className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4"
-                style={{ backgroundColor: `${stat.color}20` }}
-              >
-                <stat.icon className="h-8 w-8" style={{ color: stat.color }} />
-              </div>
-              <div className="text-4xl font-bold mb-2" style={{ color: stat.color }}>
-                {stat.number}
-              </div>
-              <div className="text-[#569AA7] text-sm leading-relaxed">{stat.label}</div>
-            </motion.div>
-          ))}
+            {/* Animated Stats */}
+            <div className="grid grid-cols-2 gap-8 text-center w-full">
+              {stats.map((stat) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true }}
+                  className="flex flex-col items-center justify-center space-y-1"
+                >
+                  <span className="text-4xl font-bold text-primary flex items-center">
+                    <h3 style={{ color: "#034F66", fontSize: "2.5rem", fontWeight: "bold" }}>
+  {stat.value}
+</h3>
+
+                    {stat.suffix}
+                  </span>
+                  <p className="text-sm text-[#569AA7]">{stat.label}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            <button className="text-[#034F66]">
+              <Link href="/about">Learn More About Us</Link>
+            </button>
+          </div>
+
+          {/* Right Side - Visual Card */}
+          <div className="flex flex-col items-center justify-center gap-8">
+            <Card />
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

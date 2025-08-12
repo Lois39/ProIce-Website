@@ -1,5 +1,5 @@
 "use client"
-
+import Link from "next/link";
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 import { motion } from "framer-motion"
@@ -42,6 +42,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
           >
+             <a
+              href="mailto:info@pro-ice.com.ng?subject=Business Inquiry&body=Hello Pro-ICE Team,%0D%0A%0D%0AI would like to discuss how Pro-ICE can help transform my business.%0D%0A%0D%0APlease contact me to schedule a consultation.%0D%0A%0D%0AThank you."
+>
             <Button
               size="lg"
               className="bg-[#80B6C1] hover:bg-[#458496] text-white px-8 py-4 text-lg"
@@ -52,6 +55,8 @@ export function Hero() {
             >
               Talk to Us <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+            </a>
+              <Link href="/services">
             <Button
               variant="outline"
               size="lg"
@@ -59,6 +64,7 @@ export function Hero() {
             >
               <Play className="mr-2 h-5 w-5" /> Explore Services
             </Button>
+            </Link>
           </motion.div>
 
           <motion.div
