@@ -64,8 +64,8 @@ export function Navigation() {
             <Link href="/industries" className="text-[#034F66] hover:text-[#80B6C1] transition-colors">
               Industries
             </Link>
-            <Link href="/partners" className="text-[#034F66] hover:text-[#80B6C1] transition-colors">
-              Partners
+            <Link href="/career" className="text-[#034F66] hover:text-[#80B6C1] transition-colors">
+              Careers
             </Link>
             <Link href="/contact" className="text-[#034F66] hover:text-[#80B6C1] transition-colors">
               Contact
