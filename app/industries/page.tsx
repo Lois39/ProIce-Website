@@ -104,67 +104,67 @@ import { Globe, Database, Cpu, Code, Shield, Cloud, Settings, Wifi, Phone } from
 
 const industries = [
   {
-    title: "Web Development",
+    title: "Financial Services & Banking",
     icon: <Globe className="h-8 w-8 text-[#034F66]" />,
-    problem: "Ensuring trust and security between employers and workers while preventing fraudulent accounts.",
-    solution: "Implemented robust KYC verification and blacklist features to verify identities and maintain platform integrity.",
-    benefit: "Created a safe, credible environment that increased user trust and attracted more employers."
+    problem: " Secure transaction handling at scale.",
+    solution: "Sophos-hardened firewalls + encryption + regulatory compliance workshops.",
+    benefit: "Reduced fraud, compliance risk, customer trust."
   },
   {
-    title: "Financial Technology",
+    title: "Healthcare / HealthTech",
     icon: <Database className="h-8 w-8 text-[#034F66]" />,
-    problem: "Delivering accurate credit score calculations quickly while protecting user privacy.",
-    solution: "Optimized backend algorithms and secured API connections to process data efficiently without storing sensitive info.",
-    benefit: "Provided fast, reliable insights that improved client credibility and customer retention."
+    problem: "Patient data privacy & secure remote diagnostics.",
+    solution: "Cloud security protocols, encrypted data pipelines, audit logs.",
+    benefit: "Trust / legal compliance; enabling telehealth."
   },
   {
-    title: "Fintech & Payments",
+    title: "Education & EdTech",
     icon: <Cpu className="h-8 w-8 text-[#034F66]" />,
-    problem: "Integrating multiple services like airtime purchase, wallet management, and estate payments into one app.",
-    solution: "Developed a unified backend with secure APIs to handle all transactions efficiently in real time.",
-    benefit: "Increased engagement by enabling customers to complete multiple transactions from one platform."
+    problem: "Unreliable access & performance tracking.",
+    solution: "Web and mobile platforms, dashboarding, real-time dashboards.",
+    benefit: "Better student engagement, accurate performance monitoring, and scalable e-learning."
   },
   {
-    title: "E-Learning Platforms",
+    title: "Energy & Utilities",
     icon: <Code className="h-8 w-8 text-[#034F66]" />,
-    problem: "Tracking student progress while enabling mentors to give real-time feedback.",
-    solution: "Built interactive dashboards with automated notifications for students and mentors.",
-    benefit: "Improved learning outcomes and mentor efficiency, attracting more institutions to the platform."
+    problem: "Cyber threats to critical infrastructure & poor data visibility.",
+    solution: "Smart grid monitoring, secure SCADA systems, AI-driven threat detection.",
+    benefit: "Improved reliability, energy efficiency, and reduced security risks."
   },
   {
-    title: "Cybersecurity",
+    title: "Government / Public Sector",
     icon: <Shield className="h-8 w-8 text-[#034F66]" />,
-    problem: "Risk of hacking, data theft, and cyber attacks.",
-    solution: "Implement firewalls, encryption, and real-time threat monitoring.",
-    benefit: "Protects sensitive data, builds customer trust, and ensures compliance."
+    problem: "Legacy systems & weak cybersecurity posture",
+    solution: "IT modernization, zero-trust frameworks, cybersecurity awareness training.",
+    benefit: "Stronger data protection, more efficient services, increased public trust."
   },
   {
-    title: "Cloud Security Services",
+    title: "Retail & E-Commerce",
     icon: <Cloud className="h-8 w-8 text-[#034F66]" />,
-    problem: "Cloud data can be breached if not properly secured.",
-    solution: "Apply advanced cloud security protocols and monitoring.",
-    benefit: "Ensures safe, reliable, and cost-efficient cloud operations."
+    problem: "Payment fraud & unstable online platforms.",
+    solution: "Secure payment gateways, scalable mobile/web apps, cybersecurity monitoring.",
+    benefit: "Increased sales reliability, customer confidence, and smoother shopping experiences."
   },
   {
-    title: "Managed IT Services",
+    title: "Manufacturing & Industrial",
     icon: <Settings className="h-8 w-8 text-[#034F66]" />,
-    problem: "Technical issues disrupt daily operations.",
-    solution: "Provide 24/7 IT monitoring and support.",
-    benefit: "Reduces downtime and ensures smooth business operations."
+    problem: "Downtime from outdated systems & vulnerable supply chains.",
+    solution: "IoT-driven monitoring, cloud-based ERP solutions, network security layers.",
+    benefit: "Improved operational efficiency, minimized downtime, stronger supply chain resilience."
   },
   {
-    title: "Internet of Things (IoT)",
+    title: "Logistics & Transportation",
     icon: <Wifi className="h-8 w-8 text-[#034F66]" />,
-    problem: "Lack of real-time data for decision-making.",
-    solution: "Connect smart devices to gather and analyze data.",
-    benefit: "Improves efficiency, cuts costs, and enables predictive maintenance."
+    problem: "Tracking inefficiencies & weak data protection.",
+    solution: "GPS-enabled fleet management, secure mobile apps, real-time dashboards.",
+    benefit: "Reduced delays, optimized delivery operations, and customer transparency."
   },
   {
-    title: "Telecom Consulting",
+    title: "Real Estate & Construction",
     icon: <Phone className="h-8 w-8 text-[#034F66]" />,
-    problem: "Poor communication systems slow down business operations.",
-    solution: "Optimize telecom infrastructure and adopt modern communication tools.",
-    benefit: "Improves team collaboration and customer communication."
+    problem: "Data silos, poor project coordination, and cyber risks.",
+    solution: "Centralized project management software, secure document storage, cloud access.",
+    benefit: "Better collaboration, reduced delays, and secure handling of sensitive contracts."
   }
 ]
 
@@ -173,9 +173,9 @@ export default function IndustriesPage() {
     <main className="min-h-screen pt-20">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#034F66] mb-4">From Challenges to Scalable Solutions</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#034F66] mb-4">How Pro-ICE Powers Sector-Focused Solutions</h1>
           <p className="text-xl text-[#569AA7] max-w-3xl mx-auto">
-            Turning complex problems into efficient, user-focused solutions delivering measurable results that help businesses grow, adapt, and thrive.
+          Every industry faces unique challenges from securing sensitive data to scaling operations. At Pro-Ice Limited, we don’t just provide generic fixes. We design tailored solutions backed by real results helping businesses cut downtime, strengthen security, and improve efficiency
           </p>
         </div>
 
