@@ -99,19 +99,21 @@
 //   )
 // }
 
-import { IndustryCard } from "@/components/industry-card"
-import { Globe, Database, Cpu, Code, Shield, Cloud, Settings, Wifi, Phone } from "lucide-react" // added new icons
+import Link from "next/link"
+import { Globe, Database, Cpu, Code, Shield, Cloud, Settings, Wifi, Phone } from "lucide-react"
 
 const industries = [
   {
     title: "Financial Services & Banking",
+    link: "/services/cybersecurity",
     icon: <Globe className="h-8 w-8 text-[#034F66]" />,
-    problem: " Secure transaction handling at scale.",
+    problem: "Secure transaction handling at scale.",
     solution: "Sophos-hardened firewalls + encryption + regulatory compliance workshops.",
     benefit: "Reduced fraud, compliance risk, customer trust."
   },
   {
     title: "Healthcare / HealthTech",
+    link: "/services/cloud-services",
     icon: <Database className="h-8 w-8 text-[#034F66]" />,
     problem: "Patient data privacy & secure remote diagnostics.",
     solution: "Cloud security protocols, encrypted data pipelines, audit logs.",
@@ -119,6 +121,7 @@ const industries = [
   },
   {
     title: "Education & EdTech",
+    link: "/services/web-mobile-development",
     icon: <Cpu className="h-8 w-8 text-[#034F66]" />,
     problem: "Unreliable access & performance tracking.",
     solution: "Web and mobile platforms, dashboarding, real-time dashboards.",
@@ -126,6 +129,7 @@ const industries = [
   },
   {
     title: "Energy & Utilities",
+    link: "/services/cybersecurity",
     icon: <Code className="h-8 w-8 text-[#034F66]" />,
     problem: "Cyber threats to critical infrastructure & poor data visibility.",
     solution: "Smart grid monitoring, secure SCADA systems, AI-driven threat detection.",
@@ -133,6 +137,7 @@ const industries = [
   },
   {
     title: "Government / Public Sector",
+    link: "/services/telecom-consulting",
     icon: <Shield className="h-8 w-8 text-[#034F66]" />,
     problem: "Legacy systems & weak cybersecurity posture",
     solution: "IT modernization, zero-trust frameworks, cybersecurity awareness training.",
@@ -140,6 +145,7 @@ const industries = [
   },
   {
     title: "Retail & E-Commerce",
+    link: "/services/web-mobile-development",
     icon: <Cloud className="h-8 w-8 text-[#034F66]" />,
     problem: "Payment fraud & unstable online platforms.",
     solution: "Secure payment gateways, scalable mobile/web apps, cybersecurity monitoring.",
@@ -147,6 +153,7 @@ const industries = [
   },
   {
     title: "Manufacturing & Industrial",
+    link: "/services/rpa-ai-chatbot",
     icon: <Settings className="h-8 w-8 text-[#034F66]" />,
     problem: "Downtime from outdated systems & vulnerable supply chains.",
     solution: "IoT-driven monitoring, cloud-based ERP solutions, network security layers.",
@@ -154,6 +161,7 @@ const industries = [
   },
   {
     title: "Logistics & Transportation",
+    link: "/services/internet-of-things",
     icon: <Wifi className="h-8 w-8 text-[#034F66]" />,
     problem: "Tracking inefficiencies & weak data protection.",
     solution: "GPS-enabled fleet management, secure mobile apps, real-time dashboards.",
@@ -161,6 +169,7 @@ const industries = [
   },
   {
     title: "Real Estate & Construction",
+    link: "/services/web-mobile-development",
     icon: <Phone className="h-8 w-8 text-[#034F66]" />,
     problem: "Data silos, poor project coordination, and cyber risks.",
     solution: "Centralized project management software, secure document storage, cloud access.",
@@ -175,7 +184,7 @@ export default function IndustriesPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-[#034F66] mb-4">How Pro-ICE Powers Sector-Focused Solutions</h1>
           <p className="text-xl text-[#569AA7] max-w-3xl mx-auto">
-          Every industry faces unique challenges from securing sensitive data to scaling operations. At Pro-Ice Limited, we don’t just provide generic fixes. We design tailored solutions backed by real results helping businesses cut downtime, strengthen security, and improve efficiency
+            Every industry faces unique challenges from securing sensitive data to scaling operations. At Pro-Ice Limited, we don’t just provide generic fixes. We design tailored solutions backed by real results helping businesses cut downtime, strengthen security, and improve efficiency
           </p>
         </div>
 
@@ -184,7 +193,11 @@ export default function IndustriesPage() {
             <div key={index} className="bg-white shadow-lg rounded-xl p-6 flex flex-col gap-4 hover:shadow-2xl transition-shadow">
               <div className="flex items-center gap-4">
                 {industry.icon}
-                <h2 className="text-2xl font-bold text-[#034F66]">{industry.title}</h2>
+                <Link href={industry.link}>
+                  <h2 className="text-2xl font-bold text-[#034F66] hover:text-[#569AA7] transition-colors">
+                    {industry.title}
+                  </h2>
+                </Link>
               </div>
               
               <div>
