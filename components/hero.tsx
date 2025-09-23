@@ -10,7 +10,7 @@ export function Hero() {
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video autoPlay muted loop playsInline className="w-full h-full object-cover">
-          <source src="/small.mp4" type="video/mp4" />
+          <source src="/vid.mp4" type="video/mp4" />
           {/* Fallback gradient background */}
         </video>
         {/* Overlay for better text readability */}
