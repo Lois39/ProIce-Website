@@ -53,7 +53,7 @@ export function Hero() {
                   "mailto:info@pro-ice.com.ng?subject=Business Inquiry&body=Hello Pro-ICE Team,%0D%0A%0D%0AI would like to discuss how Pro-ICE can help transform my business.%0D%0A%0D%0APlease contact me to schedule a consultation.%0D%0A%0D%0AThank you.")
               }
             >
-              Talk to Us <ArrowRight className="ml-2 h-5 w-5" />
+             Book a Free Consultation <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             </a>
               <Link href="/services">
@@ -62,7 +62,7 @@ export function Hero() {
               size="lg"
               className="border-white text-white hover:bg-white hover:text-[#80B6C1] px-8 py-4 text-lg bg-transparent"
             >
-              <Play className="mr-2 h-5 w-5" /> Explore Services
+              <Play className="mr-2 h-5 w-5" /> See How We Can Help You
             </Button>
             </Link>
           </motion.div>
