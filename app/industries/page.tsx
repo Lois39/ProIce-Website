@@ -160,7 +160,7 @@ const industries = [
     solution: "Endpoint monitoring, digital twin simulations, AI-driven predictive maintenance.",
     benefit: "Stronger supply chain, higher productivity, lower downtime costs."
   },
-<<<<<<< HEAD
+
   // {
   //   title: "Logistics & Transportation",
   //   link: "/services/internet-of-things",
@@ -177,26 +177,7 @@ const industries = [
   //   solution: "Centralized project management software, secure document storage, cloud access.",
   //   benefit: "Better collaboration, reduced delays, and secure handling of sensitive contracts."
   // }
-=======
-  {
-    title: "Logistics & Transportation",
-    link: "/services/internet-of-things",
-    icon: <Wifi className="h-8 w-8 text-[#034F66]" />,
-    problem: "Tracking inefficiencies & weak data protection.",
-    solution: "GPS-enabled fleet management, secure mobile apps, real-time dashboards.",
-    benefit: "Reduced delays, optimized delivery operations, and customer transparency."
-  },
-  {
-    title: "Real Estate & Construction",
-    link: "/services/web-mobile-development",
-    icon: <Phone className="h-8 w-8 text-[#034F66]" />,
-    problem: "Data silos, poor project coordination, and cyber risks.",
-    solution: "Centralized project management software, secure document storage, cloud access.",
-    benefit: "Better collaboration, reduced delays, and secure handling of sensitive contracts."
 
-
-  }
->>>>>>> 073aebe73bb0effdabd2dc2c764d13d9f2ec3196
 ]
 
 export default function IndustriesPage() {
@@ -207,12 +188,10 @@ export default function IndustriesPage() {
 
           <h1 className="text-4xl md:text-5xl font-bold text-[#034F66] mb-4">How Pro-ICE Powers Sector-Focused Solutions</h1>
           <p className="text-xl text-[#569AA7] max-w-3xl mx-auto">
-<<<<<<< HEAD
-          6 Strategic Use Cases Powered by Pro-ICE
-=======
-            Every industry faces unique challenges from securing sensitive data to scaling operations. At Pro-Ice Limited, we don’t just provide generic fixes. We design tailored solutions backed by real results helping businesses cut downtime, strengthen security, and improve efficiency
 
->>>>>>> 073aebe73bb0effdabd2dc2c764d13d9f2ec3196
+          6 Strategic Use Cases Powered by Pro-ICE
+
+         
           </p>
         </div>
 
