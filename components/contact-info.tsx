@@ -28,8 +28,8 @@ export function ContactInfo() {
         </CardHeader>
         <CardContent>
           <div className="space-y-1">
-            <p className="text-[#80B6C1] font-medium">+234 813 181 7157</p>
-            <p className="text-[#80B6C1] font-medium">+234 816 089 7211</p>
+            <p className="text-[#80B6C1] font-medium">+234 803 205 6154</p>
+            <p className="text-[#80B6C1] font-medium">+234 802 222 6993</p>
           </div>
         </CardContent>
       </Card>

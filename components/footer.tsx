@@ -112,8 +112,8 @@ export function Footer() {
               <div className="flex items-start space-x-3">
                 <Phone className="h-4 w-4 text-[#80B6C1] mt-1 flex-shrink-0" />
                 <div className="text-gray-300">
-                  <div>+234 816 089 7211</div>
-                  <div>+234 813 181 7157</div>
+                  <div>+234 803 205 6154</div>
+                  <div>+234 802 222 6993</div>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
