@@ -108,33 +108,33 @@ const industries = [
     title: "Financial Services & Banking",
     link: "/services/cybersecurity",
     icon: <Globe className="h-8 w-8 text-[#034F66]" />,
-    problem: "Rising cyber fraud, compliance requirements, digital customer expectations.",
-    solution: "Core banking security, fraud monitoring, regulatory compliance dashboards, secure transactions.",
-    benefit: " Enhanced trust, fraud reduction, regulatory alignment, stronger customer retention."
+    problem: "Secure transaction handling at scale.",
+    solution: "Sophos-hardened firewalls + encryption + regulatory compliance workshops.",
+    benefit: "Reduced fraud, compliance risk, customer trust."
   },
   {
     title: "Healthcare / HealthTech",
     link: "/services/cloud-services",
     icon: <Database className="h-8 w-8 text-[#034F66]" />,
-    problem: "Data breaches, lack of integration, patient confidentiality risks.",
-    solution: "Encrypted health record systems, telemedicine platforms, compliance (HIPAA, NDPR).",
-    benefit: " Safer patient care, reliable data access, reduced operational errors."
+    problem: "Patient data privacy & secure remote diagnostics.",
+    solution: "Cloud security protocols, encrypted data pipelines, audit logs.",
+    benefit: "Trust / legal compliance; enabling telehealth."
   },
   {
     title: "Education & EdTech",
     link: "/services/web-mobile-development",
     icon: <Cpu className="h-8 w-8 text-[#034F66]" />,
-    problem: "Outdated learning platforms, limited digital security for students, fragmented tools.",
-    solution: "Secure LMS platforms, student data protection, cloud-based collaboration.",
-    benefit: "Engaged learners, scalable remote education, trusted student data environments."
+    problem: "Unreliable access & performance tracking.",
+    solution: "Web and mobile platforms, dashboarding, real-time dashboards.",
+    benefit: "Better student engagement, accurate performance monitoring, and scalable e-learning."
   },
   {
     title: "Energy & Utilities",
     link: "/services/cybersecurity",
     icon: <Code className="h-8 w-8 text-[#034F66]" />,
-    problem: "SCADA/OT system vulnerabilities, downtime risks, rising cyberattacks.",
-    solution: "ndustrial control cybersecurity, predictive maintenance dashboards, secure IoT for utilities.",
-    benefit: " Improved uptime, resilience against attacks, cost savings, regulatory compliance."
+    problem: "Cyber threats to critical infrastructure & poor data visibility.",
+    solution: "Smart grid monitoring, secure SCADA systems, AI-driven threat detection.",
+    benefit: "Improved reliability, energy efficiency, and reduced security risks."
   },
   {
     title: "Government / Public Sector",
@@ -144,40 +144,22 @@ const industries = [
     solution: "IT modernization, zero-trust frameworks, cybersecurity awareness training.",
     benefit: "Stronger data protection, more efficient services, increased public trust."
   },
-  // {
-  //   title: "Retail & E-Commerce",
-  //   link: "/services/web-mobile-development",
-  //   icon: <Cloud className="h-8 w-8 text-[#034F66]" />,
-  //   problem: "Payment fraud & unstable online platforms.",
-  //   solution: "Secure payment gateways, scalable mobile/web apps, cybersecurity monitoring.",
-  //   benefit: "Increased sales reliability, customer confidence, and smoother shopping experiences."
-  // },
+  {
+    title: "Retail & E-Commerce",
+    link: "/services/web-mobile-development",
+    icon: <Cloud className="h-8 w-8 text-[#034F66]" />,
+    problem: "Payment fraud & unstable online platforms.",
+    solution: "Secure payment gateways, scalable mobile/web apps, cybersecurity monitoring.",
+    benefit: "Increased sales reliability, customer confidence, and smoother shopping experiences."
+  },
   {
     title: "Manufacturing & Industrial",
     link: "/services/rpa-ai-chatbot",
     icon: <Settings className="h-8 w-8 text-[#034F66]" />,
-    problem: "IoT device vulnerabilities, supply chain risks, production downtime.",
-    solution: "Endpoint monitoring, digital twin simulations, AI-driven predictive maintenance.",
-    benefit: "Stronger supply chain, higher productivity, lower downtime costs."
+    problem: "Downtime from outdated systems & vulnerable supply chains.",
+    solution: "IoT-driven monitoring, cloud-based ERP solutions, network security layers.",
+    benefit: "Improved operational efficiency, minimized downtime, stronger supply chain resilience."
   },
-<<<<<<< HEAD
-  // {
-  //   title: "Logistics & Transportation",
-  //   link: "/services/internet-of-things",
-  //   icon: <Wifi className="h-8 w-8 text-[#034F66]" />,
-  //   problem: "Tracking inefficiencies & weak data protection.",
-  //   solution: "GPS-enabled fleet management, secure mobile apps, real-time dashboards.",
-  //   benefit: "Reduced delays, optimized delivery operations, and customer transparency."
-  // },
-  // {
-  //   title: "Real Estate & Construction",
-  //   link: "/services/web-mobile-development",
-  //   icon: <Phone className="h-8 w-8 text-[#034F66]" />,
-  //   problem: "Data silos, poor project coordination, and cyber risks.",
-  //   solution: "Centralized project management software, secure document storage, cloud access.",
-  //   benefit: "Better collaboration, reduced delays, and secure handling of sensitive contracts."
-  // }
-=======
   {
     title: "Logistics & Transportation",
     link: "/services/internet-of-things",
@@ -196,7 +178,6 @@ const industries = [
 
 
   }
->>>>>>> 073aebe73bb0effdabd2dc2c764d13d9f2ec3196
 ]
 
 export default function IndustriesPage() {
@@ -207,12 +188,8 @@ export default function IndustriesPage() {
 
           <h1 className="text-4xl md:text-5xl font-bold text-[#034F66] mb-4">How Pro-ICE Powers Sector-Focused Solutions</h1>
           <p className="text-xl text-[#569AA7] max-w-3xl mx-auto">
-<<<<<<< HEAD
-          6 Strategic Use Cases Powered by Pro-ICE
-=======
             Every industry faces unique challenges from securing sensitive data to scaling operations. At Pro-Ice Limited, we don’t just provide generic fixes. We design tailored solutions backed by real results helping businesses cut downtime, strengthen security, and improve efficiency
 
->>>>>>> 073aebe73bb0effdabd2dc2c764d13d9f2ec3196
           </p>
         </div>
 
