@@ -15,7 +15,7 @@ export function Footer() {
                 alt="Pro-ICE Limited"
                 width={40}
                 height={40}
-                className="w-10 h-10"
+                className="w-100 h-100"
               />
               <div>
                 <div className="font-bold text-lg">Pro-ICE Limited</div>

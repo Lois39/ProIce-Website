@@ -15,7 +15,7 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-3">
-            <Image src="/logo.png" alt="Pro-ICE Limited" width={50} height={50} className="w-12 h-12" />
+            <Image src="/logo.png" alt="Pro-ICE Limited" width={80} height={80} className="w-100 h-100" />
             <div className="hidden sm:block">
               <div className="text-[#034F66] font-bold text-xl">Pro-ICE Limited</div>
               <div className="text-[#569AA7] text-sm">People • Technology • Performance</div>
