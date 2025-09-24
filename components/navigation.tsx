@@ -77,7 +77,7 @@ export function Navigation() {
                   "mailto:info@pro-ice.com.ng?subject=Business Inquiry&body=Hello Pro-ICE Team,%0D%0A%0D%0AI would like to discuss how Pro-ICE can help transform my business.%0D%0A%0D%0APlease contact me to schedule a consultation.%0D%0A%0D%0AThank you.")
               }
             >
-              Book a Free Consultation
+              Talk to an Expert
             </Button>
           </div>
 
@@ -116,7 +116,7 @@ export function Navigation() {
                     "mailto:info@pro-ice.com.ng?subject=Business Inquiry&body=Hello Pro-ICE Team,%0D%0A%0D%0AI would like to discuss how Pro-ICE can help transform my business.%0D%0A%0D%0APlease contact me to schedule a consultation.%0D%0A%0D%0AThank you.")
                 }
               >
-                Book a Free Consultation
+                Talk to an Expert
               </Button>
             </div>
           </div>
